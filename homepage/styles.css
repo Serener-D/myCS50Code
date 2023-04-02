@@ -1,0 +1,26 @@
+#header {
+    background-color: rgba(152, 43, 52, 1);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+#indexTitle {
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+ol {
+    font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+    font-family: "Times New Roman", Times, serif;
+}

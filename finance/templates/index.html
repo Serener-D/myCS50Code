@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Your current balance</th>
+                <th scope="col">Your grand total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">{{ current_user_cash | usd }}</td>
+                <td scope="row">{{ grand_total | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Current price</th>
+                <th scope="col">Amount owned</th>
+                <th scope="col">Total value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in all_user_stocks %}
+            <tr>
+                <td scope="row">{{ stock["symbol"] }}</td>
+                <td scope="row">{{ stock["price"] | usd }}</td>
+                <td scope="row">{{ stock["amount"] }}</td>
+                <td scope="row">{{ stock["sum"] | usd }}</td>
+            </tr>
+            {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,1 @@
+I think this is a bug. There is no word about answers.txt file in lab description: https://cs50.harvard.edu/x/2023/labs/7/

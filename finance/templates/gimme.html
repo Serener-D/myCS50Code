@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gimme
+{% endblock %}
+
+{% block main %}
+    <form action="/gimme" method="post">
+        <div class="mb-3">
+            <label>Enter the amount</label>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="amount" name="amount" min="1.00" value="1.00" type="number">
+            </div>
+        <button class="btn btn-primary" type="submit">Gimme</button>
+    </form>
+{% endblock %}
