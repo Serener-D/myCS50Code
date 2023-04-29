@@ -1,4 +1,4 @@
-# mySC50Code
+# myCS50Code
 
 Just a dump of unrefactored code I wrote for Harvard's "CS50's Introduction to Computer Science" [course](https://cs50.harvard.edu/).
 
